@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"  src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body>
+   
+<div class="container">
+    <H2>Xem ngũ hành và tuổi tác</H2>
+    <div id="form">
+        <form>
+            <div class="form-gruop">
+                <label for="">Bạn Trai</label> 
+                <input type="number" id="nam" required="True" placeholder="man_of_birth" >
+    
+            </div>  
+            <div class="form-gruop">
+                <label for="">Bạn Gái</label> 
+                <input type="number" id="nu" required="True" placeholder="woman_of_birth" >
+            </div> 
+            <div class="form-gruop">
+                <button  class="btn btn-primary" id="nguhanh">Xem Ngũ Hành</button>
+                <button  class="btn btn-primary" id="hoptuoi" >Xem hợp tuổi</button> 
+            </div>
+        </form>
+    </div>
+    <div id="can">
+        <div id="nam_can">
+            <label for="">Căn của bạn Nam:</label>
+        </div>
+        <div id="nu_can">
+            <label for="">Căn của bạn Nu:</label>
+        </div>
+    </div>
+    
+</div>
+ 
+</body>
+</html>
